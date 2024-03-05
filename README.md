@@ -48,4 +48,7 @@ Due to the issue with nested `cluster`s not working properly on Mac (_see above_
 
 ![Screenshot of PDF Declarations custom panel on Windows using groups](Windows-Declarations.png)
 ![Screenshot of PDF Declarations custom panel on Mac using groups](Mac-Declarations.png)
-![Screenshot of PDF Declarations custom panel on Windows using clusters](Windows-DeclarationsClusters.png)
+![Screenshot of PDF Declarations custom panel on Windows using clusters](Windows-DeclarationsCluster.png)
+
+If you want to use the cluster version on Windows, then delete `CustomPanel_PDFDeclarationsBoth.xml` from whichever folder you copied the files to.
+
