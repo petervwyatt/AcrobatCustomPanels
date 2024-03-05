@@ -1,0 +1,237 @@
+<?xml version="1.0">
+<!DOCTYPE panel SYSTEM "http://ns.adobe.com/custompanels/1.0">
+<!-- https://pdfa.org/declarations/ -->
+<!-- edit_text(horizontal: align_fill, container_type: bag_struct, xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[1]/pdfd:conformsTo'); -->
+
+<panel title="$$$/PDFDeclarations/PanelName=PDF Declarations" version="1" type="custom_panel">
+group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical: align_top)
+{
+	group(placement: place_column, spacing: gSpace, horizontal: align_fill, vertical: align_top)
+	{
+		cluster(name: '$$$/PDFDeclarations/1D=Declaration #1', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+		{
+			group(placement: place_column, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+			{
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/PDFDeclarations/1D/conformsTo=conformsTo:', font: font_small_bold_right, vertical: align_top);
+					popup(
+							fbname: '$$$/PDFDeclarations/1D/conformsToID=conformsTo:',
+							horizontal: align_left,
+							items: '$$$/PDFDeclarations/1D/conformsTo= {};-;http://pdfa.org/declarations#wtpdf-reuse1.0 {http://pdfa.org/declarations#wtpdf-reuse1.0};http://pdfa.org/declarations#wtpdf-reuse1.0-validated {http://pdfa.org/declarations#wtpdf-reuse1.0-validated};http://pdfa.org/declarations#wtpdf-accessibility1.0 {http://pdfa.org/declarations#wtpdf-accessibility1.0};http://pdfa.org/declarations/#wtpdf-accessibility1.0-validated {http://pdfa.org/declarations/#wtpdf-accessibility1.0-validated};http://pdfa.org/declarations#wcag22a {http://pdfa.org/declarations#wcag22a};http://pdfa.org/declarations#wcag22aa {http://pdfa.org/declarations#wcag22aa};http://pdfa.org/declarations#wcag22aaa{http://pdfa.org/declarations#wcag22aaa};http://pdfa.org/declarations#pdfua1-validated {http://pdfa.org/declarations#pdfua1-validated};http://pdfa.org/declarations#pdfua2-validated {http://pdfa.org/declarations#pdfua2-validated};http://pdfa.org/declarations#iso32005 {http://pdfa.org/declarations#iso32005};http://pdfa.org/declarations#hipaa {http://pdfa.org/declarations#hipaa};',
+							xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[1]/pdfd:conformsTo'
+					);   
+				} 
+				
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					cluster(name: '$$$/PDFDeclarations/1D1C=Claim #1', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+					{
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/1D1C/claimByID=claimBy:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/1D1C/claimBy', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[1]/pdfd:claimData[1]/pdfd:claimBy');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/1D1C/claimDateID=claimDate:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/1D1C/claimDate', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[1]/pdfd:claimData[1]/pdfd:claimDate');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/1D1C/claimCredentialsID=claimCredentials:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/1D1C/claimCredentials', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[1]/pdfd:claimData[1]/pdfd:claimCredentials');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/1D1C/claimReportID=claimReport:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/1D1C/claimReport', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[1]/pdfd:claimData[1]/pdfd:claimReport');
+						}
+					}
+
+					cluster(name: '$$$/PDFDeclarations/1D2C=Claim #2', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+					{
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/1D2C/claimByID=claimBy:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/1D2C/claimBy', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[1]/pdfd:claimData[2]/pdfd:claimBy');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/1D2C/claimDateID=claimDate:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/1D2C/claimDate', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[1]/pdfd:claimData[2]/pdfd:claimDate');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/1D2C/claimCredentialsID=claimCredentials:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/1D2C/claimCredentials', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[1]/pdfd:claimData[2]/pdfd:claimCredentials');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/1D2C/claimReportID=claimReport:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/1D2C/claimReport', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[1]/pdfd:claimData[2]/pdfd:claimReport');
+						}
+					}
+				}
+			}
+		}
+
+		cluster(name: '$$$/PDFDeclarations/2D=Declaration #2', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+		{
+			group(placement: place_column, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+			{
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/PDFDeclarations/2D/conformsTo=conformsTo:', font: font_small_bold_right, vertical: align_top);
+					popup(
+							fbname: '$$$/PDFDeclarations/2D/conformsToID=conformsTo:',
+							horizontal: align_left,
+							items: '$$$/PDFDeclarations/2D/conformsTo= {};-;http://pdfa.org/declarations#wtpdf-reuse1.0 {http://pdfa.org/declarations#wtpdf-reuse1.0};http://pdfa.org/declarations#wtpdf-reuse1.0-validated {http://pdfa.org/declarations#wtpdf-reuse1.0-validated};http://pdfa.org/declarations#wtpdf-accessibility1.0 {http://pdfa.org/declarations#wtpdf-accessibility1.0};http://pdfa.org/declarations/#wtpdf-accessibility1.0-validated {http://pdfa.org/declarations/#wtpdf-accessibility1.0-validated};http://pdfa.org/declarations#wcag22a {http://pdfa.org/declarations#wcag22a};http://pdfa.org/declarations#wcag22aa {http://pdfa.org/declarations#wcag22aa};http://pdfa.org/declarations#wcag22aaa{http://pdfa.org/declarations#wcag22aaa};http://pdfa.org/declarations#pdfua1-validated {http://pdfa.org/declarations#pdfua1-validated};http://pdfa.org/declarations#pdfua2-validated {http://pdfa.org/declarations#pdfua2-validated};http://pdfa.org/declarations#iso32005 {http://pdfa.org/declarations#iso32005};http://pdfa.org/declarations#hipaa {http://pdfa.org/declarations#hipaa};',
+							xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[2]/pdfd:conformsTo'
+					); 				
+				}
+				
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					cluster(name: '$$$/PDFDeclarations/2D1C=Claim #1', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+					{
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/2D1C/claimByID=claimBy:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/2D1C/claimBy', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[2]/pdfd:claimData[1]/pdfd:claimBy');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/2D1C/claimDateID=claimDate:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/2D1C/claimDate', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[2]/pdfd:claimData[1]/pdfd:claimDate');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/2D1C/claimCredentialsID=claimCredentials:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/2D1C/claimCredentials', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[2]/pdfd:claimData[1]/pdfd:claimCredentials');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/2D1C/claimReportID=claimReport:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/2D1C/claimReport', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[2]/pdfd:claimData[1]/pdfd:claimReport');
+						}
+					}
+
+					cluster(name: '$$$/PDFDeclarations/2D2C=Claim #2', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+					{
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/2D2C/claimByID=claimBy:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/2D2C/claimBy', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[2]/pdfd:claimData[2]/pdfd:claimBy');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/2D2C/claimDateID=claimDate:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/2D2C/claimDate', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[2]/pdfd:claimData[2]/pdfd:claimDate');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/2D2C/claimCredentialsID=claimCredentials:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/2D2C/claimCredentials', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[2]/pdfd:claimData[2]/pdfd:claimCredentials');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/2D2C/claimReportID=claimReport:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/2D2C/claimReport', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[2]/pdfd:claimData[2]/pdfd:claimReport');
+						}
+					}
+				}
+			}
+		}
+		
+		cluster(name: '$$$/PDFDeclarations/3D=Declaration #3', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+		{
+			group(placement: place_column, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+			{
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/PDFDeclarations/3D/conformsTo=conformsTo:', font: font_small_bold_right, vertical: align_top);
+					popup(
+							fbname: '$$$/PDFDeclarations/3D/conformsToID=conformsTo:',
+							horizontal: align_left,
+							items: '$$$/PDFDeclarations/3D/conformsTo= {};-;http://pdfa.org/declarations#wtpdf-reuse1.0 {http://pdfa.org/declarations#wtpdf-reuse1.0};http://pdfa.org/declarations#wtpdf-reuse1.0-validated {http://pdfa.org/declarations#wtpdf-reuse1.0-validated};http://pdfa.org/declarations#wtpdf-accessibility1.0 {http://pdfa.org/declarations#wtpdf-accessibility1.0};http://pdfa.org/declarations/#wtpdf-accessibility1.0-validated {http://pdfa.org/declarations/#wtpdf-accessibility1.0-validated};http://pdfa.org/declarations#wcag22a {http://pdfa.org/declarations#wcag22a};http://pdfa.org/declarations#wcag22aa {http://pdfa.org/declarations#wcag22aa};http://pdfa.org/declarations#wcag22aaa{http://pdfa.org/declarations#wcag22aaa};http://pdfa.org/declarations#pdfua1-validated {http://pdfa.org/declarations#pdfua1-validated};http://pdfa.org/declarations#pdfua2-validated {http://pdfa.org/declarations#pdfua2-validated};http://pdfa.org/declarations#iso32005 {http://pdfa.org/declarations#iso32005};http://pdfa.org/declarations#hipaa {http://pdfa.org/declarations#hipaa};',
+							xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[3]/pdfd:conformsTo'
+					); 				
+				}
+				
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					cluster(name: '$$$/PDFDeclarations/3D1C=Claim #1', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+					{
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/3D1C/claimByID=claimBy:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/3D1C/claimBy', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[3]/pdfd:claimData[1]/pdfd:claimBy');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/3D1C/claimDateID=claimDate:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/3D1C/claimDate', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[3]/pdfd:claimData[1]/pdfd:claimDate');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/3D1C/claimCredentialsID=claimCredentials:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/3D1C/claimCredentials', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[3]/pdfd:claimData[1]/pdfd:claimCredentials');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/3D1C/claimReportID=claimReport:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/3D1C/claimReport', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[3]/pdfd:claimData[1]/pdfd:claimReport');
+						}
+					}
+
+					cluster(name: '$$$/PDFDeclarations/3D2C=Claim #2', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+					{
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/3D2C/claimByID=claimBy:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/3D2C/claimBy', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[3]/pdfd:claimData[2]/pdfd:claimBy');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/3D2C/claimDateID=claimDate:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/3D2C/claimDate', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[3]/pdfd:claimData[2]/pdfd:claimDate');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/3D2C/claimCredentialsID=claimCredentials:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/3D2C/claimCredentials', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[3]/pdfd:claimData[2]/pdfd:claimCredentials');
+						}
+
+						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+						{
+							static_text(name: '$$$/PDFDeclarations/3D2C/claimReportID=claimReport:', font: font_small_bold_right, vertical: align_top);
+							edit_text(name: '$$$/PDFDeclarations/3D2C/claimReport', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfd', xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[3]/pdfd:claimData[2]/pdfd:claimReport');
+						}
+					}
+				}
+			}
+		}		
+	}
+	
+	separator(horizontal: align_fill);
+	static_text(name: '$$$/PDFDeclarations/Copyright=Version 1.0, Copyright #{copy} PDF Association, 2024 - https://pdfa.org/declarations/', font: font_small_bold, horizontal: align_fill, vertical: align_top, label: false);
+}
+</panel>

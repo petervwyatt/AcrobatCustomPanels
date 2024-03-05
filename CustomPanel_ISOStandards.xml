@@ -1,0 +1,129 @@
+<?xml version="1.0">
+<!DOCTYPE panel SYSTEM "http://ns.adobe.com/custompanels/1.0">
+<panel title="$$$/ISOStandards/PanelName=ISO Standards" version="1" type="custom_panel">
+group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical: align_top)
+{
+	group(placement: place_column, spacing: gSpace, horizontal: align_fill, vertical: align_top)
+	{
+		cluster(name: '$$$/ISOStandards/PDFA=PDF/A (ISO 19005)', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
+		{
+			group(placement: place_column, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+			{
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFA/partID=pdfaid:part :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFA/part', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfaid', xmp_namespace: 'http://www.aiim.org/pdfa/ns/id/', xmp_path: 'pdfaid:part');
+				}
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFA/revID=pdfaid:rev :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFA/rev',  horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfaid', xmp_namespace: 'http://www.aiim.org/pdfa/ns/id/', xmp_path: 'pdfaid:rev');
+				} 
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFA/amdID=pdfaid:amd :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFA/amd',  horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfaid', xmp_namespace: 'http://www.aiim.org/pdfa/ns/id/', xmp_path: 'pdfaid:amd');
+				} 
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFA/corrID=pdfaid:corr :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFA/corr',  horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfaid', xmp_namespace: 'http://www.aiim.org/pdfa/ns/id/', xmp_path: 'pdfaid:corr');
+				} 
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFA/revID=pdfaid:conformance :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFA/conformance',  horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfaid', xmp_namespace: 'http://www.aiim.org/pdfa/ns/id/', xmp_path: 'pdfaid:conformance');
+				} 
+			}
+		}
+
+		cluster(name: '$$$/ISOStandards/PDFUA=PDF/UA (ISO 14289)', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
+		{
+			group(placement: place_column, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+			{
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFUA/partID=pdfuaid:part :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFUA/part', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfuaid', xmp_namespace: 'http://www.aiim.org/pdfua/ns/id/', xmp_path: 'pdfuaid:part');
+				}
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFUA/revID=pdfuaid:rev :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFUA/rev',  horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfuaid', xmp_namespace: 'http://www.aiim.org/pdfua/ns/id/', xmp_path: 'pdfuaid:rev');
+				}
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFUA/amdID=pdfauid:amd :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFUA/amd',  horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfuaid', xmp_namespace: 'http://www.aiim.org/pdfua/ns/id/', xmp_path: 'pdfuaid:amd');
+				} 
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFUA/corrID=pdfuaid:corr :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFUA/corr',  horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfuaid', xmp_namespace: 'http://www.aiim.org/pdfua/ns/id/', xmp_path: 'pdfuaid:corr');
+				} 
+			}
+		}		
+
+		cluster(name: '$$$/ISOStandards/PDFX=PDF/X (ISO 15930)', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
+		{
+			group(placement: place_column, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+			{
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFX/GTS_PDFXVersionID=pdfxid:GTS_PDFXVersion :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFX/GTS_PDFXVersion', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfxid', xmp_namespace: 'http://www.npes.org/pdfx/ns/id/', xmp_path: 'GTS_PDFXVersion');
+				}
+			}
+		}
+		
+		cluster(name: '$$$/ISOStandards/PDFVT=PDF/VT (ISO 16612)', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
+		{
+			group(placement: place_column, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+			{
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFVT/GTS_PDFVTVersionID=pdfvtid:GTS_PDFVTVersion :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFVT/GTS_PDFVTVersion', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfvtid', xmp_namespace: 'http://www.npes.org/pdfvt/ns/id/', xmp_path: 'GTS_PDFVTVersion');
+				}
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFVT/GTS_PDFVTModDateID=pdfvtid:GTS_PDFVTModDate :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFVT/GTS_PDFVTModDate', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfvtid', xmp_namespace: 'http://www.npes.org/pdfvt/ns/id/', xmp_path: 'GTS_PDFVTModDate');
+				}
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFVT/revID=pdfvtid:rev :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFVT/rev', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfvtid', xmp_namespace: 'http://www.npes.org/pdfvt/ns/id/', xmp_path: 'rev');
+				}
+			}
+		}		
+	
+		cluster(name: '$$$/ISOStandards/PDFE=PDF/E (ISO 24517)', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
+		{
+			group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+			{
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFE/ISO_PDFEVersionID=pdfe:ISO_PDFEVersion :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFE/ISO_PDFEVersion', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfe', xmp_namespace: 'http://www.aim.org/pdfe/ns/id/', xmp_path: 'ISO_PDFEVersion');
+				}
+			}
+		}		
+
+		cluster(name: '$$$/ISOStandards/PDFVCR=PDF/VCR (ISO 16613)', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
+		{
+			group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+			{
+				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+				{
+					static_text(name: '$$$/ISOStandards/PDFVCR/ISO_PDFVCRVersionID=pdfvcrid:ISO_PDFVCRVersion :', font: font_small_bold_right, vertical: align_top);
+					edit_text(  name: '$$$/ISOStandards/PDFVCR/ISO_PDFVCRVersion', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'pdfvcrid', xmp_namespace: 'http://www.npes.org/pdfvcr/ns/id/', xmp_path: 'ISO_PDFVCRVersion');
+				}
+			}
+		}		
+	}
+	
+	separator(horizontal: align_fill);
+	static_text(name: '$$$/ISOStandards/Copyright=Version 1.0, Copyright #{copy} PDF Association, 2024 - https://pdfa.org/', font: font_small_bold, horizontal: align_fill, vertical: align_top, label: false);
+}
+</panel>
