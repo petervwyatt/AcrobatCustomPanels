@@ -43,7 +43,9 @@ Note also that the early PDF/X standards did not use XMP metadata, but only the 
 The PDF Association defines a general extension to XMP metadata called "[PDF Declarations](https://pdfa.org/declarations)" that allows documents to declare their conformance to relevant external industry and third-party specifications such as WCAG and HIPAA. PDF Declarations use RDF `bags` of `declarations` each containing `bags` of `claimData` which is impossible (_difficult?_) to support using Custom File Info Panel fixed paths. The current dialog is limited to 3 declarations, each with 2 claims. Additional declarations or claims will not be shown.
 
 Due to the issue with nested `cluster`s not working properly on Mac (_see above_), there are 2 different versions of this custom dialog:
-1. one that uses nested `cluster`s and looks better but only works on Windows;
-2. one that only uses `group`s and works on both Mac and Windows but is slightly less intuitive. 
+1. one that uses nested `cluster`s and looks slightly better but only works on Windows [CustomPanel_PDFDeclarationsWindows.xml](CustomPanel_PDFDeclarationsWindows.xml);
+2. one that only uses `group`s and works on both Mac and Windows but is slightly less intuitive [CustomPanel_PDFDeclarationsBoth.xml](CustomPanel_PDFDeclarationsBoth.xml). 
 
-![Screenshot of PDF Declarations custom panel on Windows](Windows-Declarations.png)
+![Screenshot of PDF Declarations custom panel on Windows using groups](Windows-Declarations.png)
+![Screenshot of PDF Declarations custom panel on Mac using groups](Mac-Declarations.png)
+![Screenshot of PDF Declarations custom panel on Windows using clusters](Windows-DeclarationsClusters.png)
