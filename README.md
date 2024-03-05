@@ -1,5 +1,5 @@
 # Acrobat Custom Info Panels
-Custom Info Panels for Adobe Acrobat that display XMP metadata information in more friendly ways. This is poorly documented in Adobe's "XMP Custom Panels", dated October 2003.
+Custom Info Panels for Adobe Acrobat that display XMP metadata information in more friendly ways. This is poorly documented in Adobe's "XMP Custom Panels", dated October 2003, which I can no longer find on the Adobe website but which still works in Acrobat. Here is [a link to the documentation](http://metadatadeluxe.pbworks.com/f/XMP_CustomPanels.pdf).
 
 Copy these files to the following locations:
 
