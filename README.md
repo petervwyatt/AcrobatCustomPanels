@@ -33,6 +33,7 @@ If PDF files do not use the correct namespace identifier as per the ISO standard
 Note also that the early PDF/X standards did not use XMP metadata, but only the Document Information dictionary. 
 
 ![Screenshot of ISO Standards custom panel on Windows](Windows-ISOPanel.png)
+![Screenshot of ISO Standards custom panel on Mac](Mac-ISOPanel.png)
 
 # PDF Declarations
 The PDF Association defines a general extension to XMP metadata called "[PDF Declarations](https://pdfa.org/declarations)" that allows documents to declare their conformance to relevant external industry and third-party specifications such as WCAG and HIPAA. PDF Declarations use RDF `bags` of `declarations` with `bags` of `claimData` which is impossible (_difficult?_) to support using Custom File Info Panel fixed paths - the current dialog is limited to 3 declarations, each with 2 claims. Additional declarations or claims will not be shown.
