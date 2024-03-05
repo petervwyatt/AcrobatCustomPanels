@@ -23,7 +23,8 @@ Note that you can edit these files while Acrobat is running - just click the "Ad
 
 - I've never been able to get the `picture` feature working as I don't know how to reference the asset (file? URL? formats?)
 - I struggle to understand how to use XMP `bags` (such as needed by PDF Declarations) since it seems you can only use fixed (hard-coded) XMP paths
-- I don't believe there is any way to easily comment out stuff (I normally move blocks of code to the XML portion and then use XML comments `<!-- ... -->
+- I don't believe there is any way to easily comment out stuff (I normally move blocks of code to the XML portion and then use XML comments `<!-- ... -->`)
+- explicit `width` and `height` don't seem portable across Windows and Mac - avoid!
 
 # ISO Standards
 Displays the conformance data related to PDF subset ISO standards for PDF/A, PDF/UA, PDF/X, PDF/VT, PDF/E and PDF/VCR. PDF/R does not use any custom XMP metadata and is therefore not listed. Note that a single PDF document _can_ have multiple conformance levels, but a PDF can only conform to a _single_ conformance level for any specific family of PDF ISO standards as the same XMP tags are used. 
