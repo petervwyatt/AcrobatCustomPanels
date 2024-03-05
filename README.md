@@ -21,10 +21,12 @@ Example PDFs with both ISO conformance levels and PDF Declarations are available
 ## Debugging and Issues
 Note that you can edit these files while Acrobat is running - just click the "Additional Metadata..." button on the File Properties dialog to reload all custom panels each time. As far as I know, there is no easy way to debug beyond if your panel is not listed then it has an issue.
 
-- I've never been able to get the `picture` feature working as I don't know how to reference the asset (file? URL? formats?)
+- nested `cluster`s on Mac don't work - it appears to miscalculate the location of the contained widgets and pushes them to the far lower right corner (effectively beyond the bounds of the cluster). Only solution I came up with is not to use nested clusters!
+- I've never been able to get the `picture` feature working as I don't know how to reference the asset (_file? URL? formats?_). Setting `width` and `height` does alter the size.
 - I struggle to understand how to use XMP `bags` (such as needed by PDF Declarations) since it seems you can only use fixed (hard-coded) XMP paths
 - I don't believe there is any way to easily comment out stuff (I normally move blocks of code to the XML portion and then use XML comments `<!-- ... -->`)
-- explicit `width` and `height` don't seem portable across Windows and Mac - avoid!
+- explicit `width` and `height` don't seem portable across Windows and Mac - avoid them!
+- there is an undocumented `date_edit_text` on PC but this causes an error on Mac. This normalizes the XMP date/time string to a local timezone display (so does not display precisely what is in the XMP) 
 
 # ISO Standards
 Displays the conformance data related to PDF subset ISO standards for PDF/A, PDF/UA, PDF/X, PDF/VT, PDF/E and PDF/VCR. PDF/R does not use any custom XMP metadata and is therefore not listed. Note that a single PDF document _can_ have multiple conformance levels, but a PDF can only conform to a _single_ conformance level for any specific family of PDF ISO standards as the same XMP tags are used. 
@@ -37,6 +39,6 @@ Note also that the early PDF/X standards did not use XMP metadata, but only the 
 ![Screenshot of ISO Standards custom panel on Mac](Mac-ISOPanel.png)
 
 # PDF Declarations
-The PDF Association defines a general extension to XMP metadata called "[PDF Declarations](https://pdfa.org/declarations)" that allows documents to declare their conformance to relevant external industry and third-party specifications such as WCAG and HIPAA. PDF Declarations use RDF `bags` of `declarations` with `bags` of `claimData` which is impossible (_difficult?_) to support using Custom File Info Panel fixed paths - the current dialog is limited to 3 declarations, each with 2 claims. Additional declarations or claims will not be shown.
+The PDF Association defines a general extension to XMP metadata called "[PDF Declarations](https://pdfa.org/declarations)" that allows documents to declare their conformance to relevant external industry and third-party specifications such as WCAG and HIPAA. PDF Declarations use RDF `bags` of `declarations` each containing `bags` of `claimData` which is impossible (_difficult?_) to support using Custom File Info Panel fixed paths. The current dialog is limited to 3 declarations, each with 2 claims. Additional declarations or claims will not be shown.
 
 ![Screenshot of PDF Declarations custom panel on Windows](Windows-Declarations.png)
