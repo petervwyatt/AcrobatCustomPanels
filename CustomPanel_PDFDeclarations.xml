@@ -8,7 +8,7 @@ group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical
 {
 	group(placement: place_column, spacing: gSpace, horizontal: align_fill, vertical: align_top)
 	{
-		cluster(name: '$$$/PDFDeclarations/1D=Declaration #1', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+		cluster(name: '$$$/PDFDeclarations/1D=Declaration #1', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
 		{
 			group(placement: place_column, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
 			{
@@ -25,7 +25,7 @@ group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical
 				
 				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
 				{
-					cluster(name: '$$$/PDFDeclarations/1D1C=Claim #1', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+					cluster(name: '$$$/PDFDeclarations/1D1C=Claim #1', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
 					{
 						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
 						{
@@ -52,7 +52,7 @@ group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical
 						}
 					}
 
-					cluster(name: '$$$/PDFDeclarations/1D2C=Claim #2', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+					cluster(name: '$$$/PDFDeclarations/1D2C=Claim #2', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
 					{
 						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
 						{
@@ -82,7 +82,7 @@ group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical
 			}
 		}
 
-		cluster(name: '$$$/PDFDeclarations/2D=Declaration #2', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+		cluster(name: '$$$/PDFDeclarations/2D=Declaration #2', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
 		{
 			group(placement: place_column, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
 			{
@@ -99,7 +99,7 @@ group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical
 				
 				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
 				{
-					cluster(name: '$$$/PDFDeclarations/2D1C=Claim #1', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+					cluster(name: '$$$/PDFDeclarations/2D1C=Claim #1', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
 					{
 						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
 						{
@@ -126,7 +126,7 @@ group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical
 						}
 					}
 
-					cluster(name: '$$$/PDFDeclarations/2D2C=Claim #2', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+					cluster(name: '$$$/PDFDeclarations/2D2C=Claim #2', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
 					{
 						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
 						{
@@ -156,7 +156,7 @@ group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical
 			}
 		}
 		
-		cluster(name: '$$$/PDFDeclarations/3D=Declaration #3', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+		cluster(name: '$$$/PDFDeclarations/3D=Declaration #3', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
 		{
 			group(placement: place_column, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
 			{
@@ -173,7 +173,7 @@ group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical
 				
 				group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
 				{
-					cluster(name: '$$$/PDFDeclarations/3D1C=Claim #1', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+					cluster(name: '$$$/PDFDeclarations/3D1C=Claim #1', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
 					{
 						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
 						{
@@ -200,7 +200,7 @@ group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical
 						}
 					}
 
-					cluster(name: '$$$/PDFDeclarations/3D2C=Claim #2', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, width: 500, height: 133, child_vertical: align_top)
+					cluster(name: '$$$/PDFDeclarations/3D2C=Claim #2', placement: place_column, spacing: gSpace, margin_height: 10, horizontal: align_fill, vertical: align_top, child_vertical: align_top)
 					{
 						group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
 						{
