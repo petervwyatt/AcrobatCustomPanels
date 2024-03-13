@@ -28,6 +28,7 @@ Note that you can edit these files while Acrobat is running - just click the "Ad
 - explicit `width` and `height` don't seem portable across Windows and Mac - avoid them!
 - there is an undocumented `date_edit_text` on PC but this causes an error on Mac. This normalizes the XMP date/time string to a local timezone display (so does not display precisely what is in the XMP)
 - on Mac, the popup menu separator `-;` in ZStrings doesn't work and ends up being a selectable menu item
+- on Mac, the font size of the XMP values can be too large and is truncated such that only the top portion of the XMP text values are visible. Explicitly setting `font` on `edit_text(...)` and changing the Mac OS display font size setting did not appear to correct this - it appears that Acrobat always uses fixed-sized text on the Mac! 
 
 # ISO Standards
 Displays the conformance data related to PDF subset ISO standards for PDF/A, PDF/UA, PDF/X, PDF/VT, PDF/E and PDF/VCR. PDF/R does not use any custom XMP metadata and is therefore not listed. Note that a single PDF document _can_ have multiple conformance levels, but a PDF can only conform to a _single_ conformance level for any specific family of PDF ISO standards as the same XMP tags are used. 
