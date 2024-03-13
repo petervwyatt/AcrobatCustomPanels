@@ -16,19 +16,7 @@ To access:
 - click the `Additional Metadata...` button on the first "Description" tab
 - a new dialog will open and the list on the left will show all additional panels
 
-Example PDFs with both ISO conformance levels and PDF Declarations are available from [https://pdfa.org/wtpdf/](https://pdfa.org/wtpdf/).
-
-## Debugging and Issues
-Note that you can edit these files while Acrobat is running - just click the "Additional Metadata..." button on the File Properties dialog to reload all custom panels each time. As far as I know, there is no easy way to debug beyond if your panel is not listed then it has an issue.
-
-- nested `cluster`s on Mac don't work - it appears to miscalculate the location of the contained widgets and pushes them to the far lower right corner (effectively beyond the bounds of the cluster). Only solution I came up with is not to replace nested `cluster`s with `group`!
-- I've never been able to get the `picture` feature working as I don't know how to reference the asset (_file? URL? formats?_). Setting `width` and `height` does alter the size.
-- I struggle to understand how to use XMP `bags` (such as needed by PDF Declarations) since it seems you can only use fixed (hard-coded) XMP paths
-- I don't believe there is any way to easily comment out stuff (I normally move blocks of code to the XML portion and then use XML comments `<!-- ... -->`)
-- explicit `width` and `height` don't seem portable across Windows and Mac - avoid them!
-- there is an undocumented `date_edit_text` on PC but this causes an error on Mac. This normalizes the XMP date/time string to a local timezone display (so does not display precisely what is in the XMP)
-- on Mac, the popup menu separator `-;` in ZStrings doesn't work and ends up being a selectable menu item
-- on Mac, the font size of the XMP values can be too large and is truncated such that only the top portion of the XMP text values are visible. Explicitly setting `font` on `edit_text(...)` and changing the Mac OS display font size setting did not appear to correct this - it appears that Acrobat always uses fixed-sized text on the Mac! 
+Example PDFs with both ISO conformance levels and PDF Declarations are available from [https://pdfa.org/wtpdf/](https://pdfa.org/wtpdf/). [LibreOffice 24.2](https://www.libreoffice.org/) and later can create PDFs with PDF/A and PDF/UA-1 conformance levels.
 
 # ISO Standards
 Displays the conformance data related to PDF subset ISO standards for PDF/A, PDF/UA, PDF/X, PDF/VT, PDF/E and PDF/VCR. PDF/R does not use any custom XMP metadata and is therefore not listed. Note that a single PDF document _can_ have multiple conformance levels, but a PDF can only conform to a _single_ conformance level for any specific family of PDF ISO standards as the same XMP tags are used. 
@@ -53,3 +41,15 @@ Due to the issue with nested `cluster`s not working properly on Mac (_see above_
 
 If you want to use the cluster version on Windows, then delete `CustomPanel_PDFDeclarationsBoth.xml` from whichever folder you copied the files to.
 
+## Debugging and Issues
+Note that you can edit these files while Acrobat is running - just click the "Additional Metadata..." button on the File Properties dialog to reload all custom panels each time. As far as I know, there is no easy way to debug beyond if your panel is not listed then it has an issue.
+
+- nested `cluster`s on Mac don't work - it appears to miscalculate the location of the contained widgets and pushes them to the far lower right corner (effectively beyond the bounds of the cluster). Only solution I came up with is not to replace nested `cluster`s with `group`!
+- I've never been able to get the `picture` feature working as I don't know how to reference the asset (_file? URL? formats?_). Setting `width` and `height` does alter the size.
+- I struggle to understand how to use XMP `bags` (such as needed by PDF Declarations) since it seems you can only use fixed (hard-coded) XMP paths
+- I don't believe there is any way to easily comment out stuff (I normally move blocks of code to the XML portion and then use XML comments `<!-- ... -->`)
+- explicit `width` and `height` don't seem portable across Windows and Mac - avoid them!
+- there is an undocumented `date_edit_text` on PC but this causes an error on Mac. This normalizes the XMP date/time string to a local timezone display (so does not display precisely what is in the XMP)
+- on Mac, the popup menu separator `-;` in ZStrings doesn't work and ends up being a selectable menu item
+- on Mac, the font size of the XMP values can be too large and is truncated such that only the top portion of the XMP text values are visible. Explicitly setting `font` on `edit_text(...)` and changing the Mac OS display font size setting did not appear to correct this - it appears that Acrobat always uses fixed-sized text on the Mac!
+    ![Screenshot of Mac font display issue](MacDisplayIssue.png)
