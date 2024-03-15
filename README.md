@@ -14,7 +14,7 @@ Mac OS X:
 
 Windows:
 - `C:\Program Files\Common Files\Adobe\XMP\Custom File Info Panels` - for all users on the machine
-- `C:\Documents and Settings\<user>\Application Data\Adobe\XMP\Custom File Info Panels` - for each user
+- `C:\Users\<user>\AppData\Roaming\Adobe\Acrobat\DC\XMP\Custom File Info Panels` - for each user
 
 To access:
 - menu option `File` | `Document Properties...`
