@@ -1,7 +1,7 @@
 <?xml version="1.0">
 <!DOCTYPE panel SYSTEM "http://ns.adobe.com/custompanels/1.0">
-<!-- https://pdfa.org/declarations/ -->
-<!-- edit_text(horizontal: align_fill, container_type: bag_struct, xmp_namespace: 'http://pdfa.org/declarations/', xmp_path: 'pdfd:declarations[1]/pdfd:conformsTo'); -->
+<!-- https://github.com/petervwyatt/AcrobatCustomPanels-->
+<!-- https://pdfa.org/declarations/-->
 
 <panel title="$$$/PDFDeclarations/PanelName=PDF Declarations" version="1" type="custom_panel">
 group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical: align_top)
@@ -232,6 +232,6 @@ group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical
 	}
 	
 	separator(horizontal: align_fill);
-	static_text(name: '$$$/PDFDeclarations/Copyright=Version 1.0, Copyright #{copy} PDF Association, 2024 - https://pdfa.org/declarations/', font: font_small_bold, horizontal: align_fill, vertical: align_top, label: false);
+	static_text(name: '$$$/PDFDeclarations/Copyright=Version 1.1, Copyright #{copy} Peter Wyatt, 2024 - https://pdfa.org/declarations/', font: font_small_bold, horizontal: align_fill, vertical: align_top, label: false);
 }
 </panel>

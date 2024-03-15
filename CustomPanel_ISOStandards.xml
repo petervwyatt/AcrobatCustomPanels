@@ -1,5 +1,6 @@
 <?xml version="1.0">
 <!DOCTYPE panel SYSTEM "http://ns.adobe.com/custompanels/1.0">
+<!-- https://github.com/petervwyatt/AcrobatCustomPanels-->
 <panel title="$$$/ISOStandards/PanelName=ISO Standards" version="1" type="custom_panel">
 group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical: align_top)
 {
@@ -124,6 +125,6 @@ group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical
 	}
 	
 	separator(horizontal: align_fill);
-	static_text(name: '$$$/ISOStandards/Copyright=Version 1.0, Copyright #{copy} PDF Association, 2024 - https://pdfa.org/', font: font_small_bold, horizontal: align_fill, vertical: align_top, label: false);
+	static_text(name: '$$$/ISOStandards/Copyright=Version 1.1, Copyright #{copy} Peter Wyatt, 2024', font: font_small_bold, horizontal: align_fill, vertical: align_top, label: false);
 }
 </panel>
