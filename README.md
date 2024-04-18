@@ -4,6 +4,8 @@ Custom File Info Panels for Adobe Acrobat that provide a nice display of XMP met
 
 Example PDFs with both ISO conformance levels and PDF Declarations are available from [https://pdfa.org/wtpdf/](https://pdfa.org/wtpdf/). [LibreOffice 24.2](https://www.libreoffice.org/) and later can also create PDFs with PDF/A-{1,2} and PDF/UA-1 conformance levels.
 
+**NOTE:** _due to [PDF Errata #395](https://github.com/pdf-association/pdf-issues/issues/395), the custom info panels for PDF Declarations were updated on April 18, 2024._
+
 ## Installation
 
 Copy these files to the following locations (_note that these folders may need to be created first_) - the file extension does not matter:
