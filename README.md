@@ -11,37 +11,41 @@ Example PDFs with both ISO conformance levels and PDF Declarations are available
 Copy these files to the following locations (_note that these folders may need to be created first_) - the file extension does not matter:
 
 Mac OS X:
+
 - `{Root Volume}/Library/Application Support/Adobe/XMP/Custom File Info Panels` - for all users on the machine
 - `{Home Directory}/Library/Application Support/Adobe/XMP/Custom File Info Panels` - for each user
 
 Windows:
+
 - `C:\Program Files\Common Files\Adobe\XMP\Custom File Info Panels` - for all users on the machine
 - `C:\Users\<user>\AppData\Roaming\Adobe\Acrobat\DC\XMP\Custom File Info Panels` - for each user
 
 To access:
+
 - menu option `File` | `Document Properties...`
 - click the `Additional Metadata...` button on the first "Description" tab
 - a new dialog will open and the list on the left will show additional panels
 - click to select the panel
 
-# ISO Standards
+## ISO Standards
 
-Displays the conformance data related to PDF subset ISO standards for PDF/A, PDF/UA, PDF/X, PDF/VT, PDF/E, and PDF/VCR. PDF/R does not use any custom XMP metadata and is therefore not listed. Note that a single PDF document _can_ have multiple conformance levels, but a PDF can only conform to a _single_ conformance level for any specific family of PDF ISO standards as the same XMP fields are used. 
+Displays the conformance data related to PDF subset ISO standards for PDF/A, PDF/UA, PDF/X, PDF/VT, PDF/E, and PDF/VCR. PDF/R does not use any custom XMP metadata and is therefore not listed. Note that a single PDF document _can_ have multiple conformance levels, but a PDF can only conform to a _single_ conformance level for any specific family of PDF ISO standards as the same XMP fields are used.
 
 If PDF files do not use the correct namespace identifier as per the ISO standards then this dialog will **NOT** show anything (e.g. a common error is to have `pdfa:` rather than `pdfaid:` as required by ISO 19005).
 
-Note also that the early PDF/X standards did not use XMP metadata, but only the Document Information dictionary. 
+Note also that the early PDF/X standards did not use XMP metadata, but only the Document Information dictionary.
 
 ![Screenshot of ISO Standards custom panel on Windows](Windows-ISOPanel.png)
 ![Screenshot of ISO Standards custom panel on Mac](Mac-ISOPanel.png)
 
-# PDF Declarations
+## PDF Declarations
 
 The [PDF Association](https://pdfa.org) defines a general extension to XMP metadata called "[PDF Declarations](https://pdfa.org/declarations)" that allows documents to declare their conformance to relevant external industry and third-party specifications such as WCAG and HIPAA. PDF Declarations use RDF `bags` of `declarations` each containing `bags` of `claimData` which I think is impossible (_difficult?_) to support using Custom File Info Panel fixed paths. The current dialog is thus limited to 3 declarations, each with 2 claims. Additional declarations or claims will not be shown.
 
 Due to the issue with nested `cluster`s not working properly on Mac (_see "Debugging and Issues" below_), there are 2 different versions of this custom dialog:
+
 1. one that uses nested `cluster`s and looks slightly better but only works on Windows [CustomPanel_PDFDeclarationsWindows.xml](CustomPanel_PDFDeclarationsWindows.xml);
-2. one that only uses `group`s and works on both Mac and Windows but is slightly less intuitive [CustomPanel_PDFDeclarationsBoth.xml](CustomPanel_PDFDeclarationsBoth.xml). 
+2. one that only uses `group`s and works on both Mac and Windows but is slightly less intuitive [CustomPanel_PDFDeclarationsBoth.xml](CustomPanel_PDFDeclarationsBoth.xml).
 
 ![Screenshot of PDF Declarations custom panel on Windows using groups](Windows-Declarations.png)
 ![Screenshot of PDF Declarations custom panel on Mac using groups](Mac-Declarations.png)
@@ -49,14 +53,18 @@ Due to the issue with nested `cluster`s not working properly on Mac (_see "Debug
 
 If you want to use the `cluster` version on Windows, then delete `CustomPanel_PDFDeclarationsBoth.xml` from whatever folder you copied the files to.
 
-# Debugging 
+## W3C TDMRep
+
+The W3C has defined a "TDM Reservation Protocol" known as [TDMRep](https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240510/#sec-pdf).
+
+## Debugging
 
 Note that you can edit these files while Adobe Acrobat is running - just click the "Additional Metadata..." button on the File | Properties... dialog to reload all custom panels each time. As far as I know, there is no easy way to debug - beyond if your panel is not listed then it has an issue.
 
-# Issues
+## Issues
 
 - explicit `width` and `height` don't seem portable across Windows and Mac - avoid them!
-- nested `cluster`s on Mac don't work - it appears to miscalculate the location of the contained widgets and pushes them to the far lower right corner (effectively beyond the bounds of the cluster). Only solution I came up with is not to replace nested `cluster`s with `group`! 
+- nested `cluster`s on Mac don't work - it appears to miscalculate the location of the contained widgets and pushes them to the far lower right corner (effectively beyond the bounds of the cluster). Only solution I came up with is not to replace nested `cluster`s with `group`!
 - I've never been able to get the `picture` feature working as I don't know how to reference the asset (_file? URL? formats?_). Setting `width` and `height` does however alter the size.
 - I struggle to understand how to use XMP `bags` (such as needed by PDF Declarations) since it seems you can only use fixed (hard-coded) XMP paths
 - I don't believe there is any way to easily comment out stuff (I normally move blocks of code to the XML portion and then use XML comments `<!-- ...-->`)
