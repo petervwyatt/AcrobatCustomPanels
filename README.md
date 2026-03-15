@@ -57,6 +57,8 @@ If you want to use the `cluster` version on Windows, then delete `CustomPanel_PD
 
 The W3C has defined a "TDM Reservation Protocol" known as [TDMRep](https://www.w3.org/community/reports/tdmrep/CG-FINAL-tdmrep-20240510/#sec-pdf).
 
+![Screenshot of TDMRep custom panel on Windows](Windows-TDMRepPanel.png)
+
 ## Debugging
 
 Note that you can edit these files while Adobe Acrobat is running - just click the "Additional Metadata..." button on the File | Properties... dialog to reload all custom panels each time. As far as I know, there is no easy way to debug - beyond if your panel is not listed then it has an issue.

@@ -4,10 +4,10 @@
 <panel title="$$$/TDMRep/PanelName=W3C TDMRep" version="1" type="custom_panel">
 group(placement: place_column, spacing: gSpace, horizontal: align_left, vertical: align_top)
 {
-  group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
+  group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware, width: 500)
   {
-    static_text(name: '$$$/TDMRep/reservation=tdm:reservation :', font: font_small_bold_right, vertical: align_top);
-    edit_text(  name: '$$$/TDMRep/reservation', horizontal: align_fill, container_type: single_value, xmp_ns_prefix: 'tdm', xmp_namespace: 'http://www.w3.org/ns/tdmrep/', xmp_path: 'tdm:reservation');
+    static_text(name: '$$$/TDMRep/reservation=tdm:reservation (required, 0 or 1) :', font: font_small_bold_right, vertical: align_top);
+    edit_text(  name: '$$$/TDMRep/reservation', horizontal: align_fill, container_type: single_value, max_chars: 2, xmp_ns_prefix: 'tdm', xmp_namespace: 'http://www.w3.org/ns/tdmrep/', xmp_path: 'tdm:reservation');
   } 
   group(placement: place_row, spacing: gSpace, horizontal: align_fill, reverse: rtl_aware)
   {
