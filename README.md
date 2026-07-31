@@ -18,6 +18,7 @@ Mac OS X:
 Windows:
 
 - `C:\Program Files\Common Files\Adobe\XMP\Custom File Info Panels` - for all users on the machine
+- `C:\Program Files (x86)\Common Files\Adobe\Acrobat\DC\XMP\Custom File Info Panels` - for all users on the x64 machine
 - `C:\Users\<user>\AppData\Roaming\Adobe\Acrobat\DC\XMP\Custom File Info Panels` - for each user
 
 To access:
